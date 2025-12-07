@@ -37,7 +37,7 @@
 ### 1. Clone or Download the Project
 
 ```bash
-git clone https://github.com/yourusername/memflow.git
+git clone https://github.com/alfazmahmudrizve/memflow.git
 cd memflow
 ```
 
