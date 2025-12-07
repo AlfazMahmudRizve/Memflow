@@ -1,0 +1,79 @@
+# MemFlow Sample Address File
+# This file contains sample virtual addresses for testing
+# Lines starting with # are comments and will be ignored
+
+# Test 1: Sequential page access
+16916
+62493
+30198
+53683
+
+# Test 2: Same page, different offsets (Page 4)
+16384
+16500
+17000
+17200
+
+# Test 3: Repeated access (should show TLB hits)
+16916
+16916
+16916
+
+# Test 4: Page boundary testing
+4095
+4096
+8191
+8192
+
+# Test 5: Random addresses for TLB testing
+1234567
+9876543
+5555555
+3333333
+7777777
+
+# Test 6: High addresses
+16777216
+33554432
+50331648
+67108864
+
+# Test 7: Clustered access (good locality)
+100000
+100100
+100200
+100300
+100400
+
+# Test 8: Diverse page access
+1000
+10000
+100000
+1000000
+10000000
+
+# Test 9: Edge cases
+0
+4095
+4096
+8191
+
+# Test 10: TLB thrashing test (17 different pages, TLB size = 16)
+0
+4096
+8192
+12288
+16384
+20480
+24576
+28672
+32768
+36864
+40960
+45056
+49152
+53248
+57344
+61440
+65536
+69632
